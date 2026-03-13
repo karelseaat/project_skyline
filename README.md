@@ -1,40 +1,34 @@
 # Project Skyline
 
-A bash script that visualizes your code repositories as a city skyline.
+I built this because I wanted to see my projects at a glance—no dashboards, no UI, just raw info in the terminal.
 
-## Description
+It’s a bash script that scans your project directories and draws an ASCII skyline. Taller buildings = bigger codebases.
 
-Project Skyline surveys your current directory and generates an ASCII art cityscape. Each "building" represents a subdirectory (project), where the height corresponds to the size of the codebase (Lines of Code).
+## How it works
 
-## Features
+- Scans immediate subdirectories.
+- Counts lines of code for common languages (Java, JS, TS, Python, Shell, C++, etc.). Falls back to file count for others.
+- Scales everything to fit your terminal—adjusts automatically based on the largest project.
 
-- **Automated Surveying**: Scans immediate subdirectories to gather metrics.
-- **Smart Metrics**: prioritize Lines of Code (LOC) for common languages (Java, JS, TS, Python, Shell, C++, etc.), falling back to file count for others.
-- **Dynamic Scaling**: Automatically scales the skyline to fit within a fixed terminal height based on the largest project found.
-- **Visualization**: Renders buildings with roofs and windows in the terminal.
-- **Legend**: detailed breakdown of project names and their calculated sizes.
+Buildings get roofs and windows. A legend shows each project name and its LOC/file count.
 
 ## Usage
 
-1. Navigate to a directory containing your projects:
-   ```bash
-   cd ~/my-projects
-   ```
+```bash
+cd ~/my-projects
+./skyline.sh
+```
 
-2. Run the skyline script:
-   ```bash
-   ./skyline.sh
-   ```
+Make sure it’s executable first:
 
-   Ensure the script has execution permissions:
-   ```bash
-   chmod +x skyline.sh
-   ```
+```bash
+chmod +x skyline.sh
+```
 
-## Configuration
+## Config
 
-You can adjust the visualization settings by editing the variables at the top of `skyline.sh`:
+Edit the top of `skyline.sh` to tweak spacing:
 
-- `MAX_HEIGHT`: Maximum height of buildings in terminal rows (default: 15).
-- `BUILDING_WIDTH`: Width of one building in characters.
-- `GAP_WIDTH`: Space between buildings.
+- `MAX_HEIGHT` → max building height in rows (default: 15)
+- `BUILDING_WIDTH` → characters per building (default: 10)
+- `GAP_WIDTH` → spaces between buildings (default: 2)

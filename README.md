@@ -32,3 +32,7 @@ Edit the top of `skyline.sh` to tweak spacing:
 - `MAX_HEIGHT` → max building height in rows (default: 15)
 - `BUILDING_WIDTH` → characters per building (default: 10)
 - `GAP_WIDTH` → spaces between buildings (default: 2)
+
+## More from Karelseaat
+
+For more projects and experiments, visit my GitHub Pages site: [karelseaat.github.io](https://karelseaat.github.io/)

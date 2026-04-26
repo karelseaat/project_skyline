@@ -36,3 +36,15 @@ Edit the top of `skyline.sh` to tweak spacing:
 ## More from Karelseaat
 
 For more projects and experiments, visit my GitHub Pages site: [karelseaat.github.io](https://karelseaat.github.io/)
+
+<!-- KEEP-EXPLORING-START -->
+## Keep Exploring
+
+If you made it to the bottom, jump straight into a few related repos:
+
+- [Heartbeat Heatmap](https://github.com/karelseaat/heartbeat_heatmap)
+- [Defrag Pixel Map](https://github.com/karelseaat/defrag_pixel_map)
+- [Nim Process Manager](https://github.com/karelseaat/nim_process_manager)
+
+- [Full project index](https://karelseaat.github.io/)
+<!-- KEEP-EXPLORING-END -->
